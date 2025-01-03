@@ -1,0 +1,53 @@
+:root {
+  --accent-color: #332208;
+  --secondary-color: #c5ac2d;
+  --body-text: #1b1818;
+  --white-bg: #fefefe;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto Condensed", serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--body-text);
+  background-color: var(--white-bg);
+}
+
+img {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
