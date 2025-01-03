@@ -155,3 +155,23 @@ ol {
   color: var(--secondary-color);
 }
 
+@media only screen and (max-width: 1024px) {
+  .menu {
+    display: none;
+  }
+  .header__btn {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 50px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    padding: 0 25px;
+  }
+}
