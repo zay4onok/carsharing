@@ -213,21 +213,24 @@ ol {
   transform: scale(1.2);
 }
 
-  .social-media {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+@media only screen and (max-width: 1100px) {
+  .footer .menu {
+    display: none;
   }
-  .social-media__item
-  .social-media__link
-  .social-media__img
-  @media
-  only
-  screen
-  and
-  (max-width: 1024px) {
-  .menu {
+  .social-media {
+    width: auto;
+    order: 2;
+  }
+  .footer .phone {
+    order: 3;
+  }
+  .footer .btn {
+    order: 1;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .header .menu {
     display: none;
   }
   .header__btn {
@@ -238,6 +241,11 @@ ol {
 @media only screen and (max-width: 768px) {
   .container {
     padding: 0 50px;
+  }
+  .footer__top {
+    flex-direction: column;
+    padding: 50px 0;
+    gap: 40px;
   }
 }
 
