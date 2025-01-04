@@ -164,7 +164,7 @@ ol {
 .footer__container {
   font-size: 18px;
   line-height: 21px;
-  height: 200px;
+  min-height: 200px;
   background-color: var(--accent-color);
   color: var(--white-bg);
 }
@@ -173,17 +173,44 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 21px;
   padding-top: 75px;
-  padding-bottom: 21px;
 }
 .btn {
+  text-transform: uppercase;
   font-family: "Roboto Condensed", serif;
   font-size: 16px;
   line-height: 19px;
   width: 200px;
   height: 50px;
+  border: 1px solid transparent;
   background-color: var(--secondary-color);
   color: var(--white-bg);
+  transition: 300ms ease-in-out;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: var(--white-bg);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.social-media__img {
+  transition: transform 300ms;
+}
+.social-media__link:hover .social-media__img {
+  transform: scale(1.2);
 }
 
   .social-media {
