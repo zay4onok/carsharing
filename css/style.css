@@ -325,6 +325,9 @@ ol {
   .header__btn {
     display: block;
   }
+  .conditions__list{
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 768px) {
