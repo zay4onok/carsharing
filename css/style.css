@@ -246,6 +246,8 @@ ol {
 
 .reviews__list {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -260,9 +262,6 @@ ol {
 
 .reviws__item-title {
   margin-bottom: 45px;
-}
-
-.reviws__item-text {
 }
 
 /* ! FOOTER */
@@ -330,6 +329,9 @@ ol {
     align-items: center;
     gap: 50px;
   }
+  .reviews__title {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -362,7 +364,8 @@ ol {
 
 @media only screen and (max-width: 768px) {
   .container {
-    padding: 0 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   .footer__top {
     flex-direction: column;
@@ -373,6 +376,7 @@ ol {
 
 @media only screen and (max-width: 480px) {
   .container {
-    padding: 0 25px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
