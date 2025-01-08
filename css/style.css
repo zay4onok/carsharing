@@ -398,6 +398,12 @@ ol {
   }
 }
 
+@media only screen and (max-width: 650px) {
+  .reviews__list > *:nth-child(n + 5) {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .container {
     padding-left: 25px;
