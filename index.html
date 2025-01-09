@@ -122,7 +122,7 @@
     <main class="main">
       <!-- ! CONDITIONS -->
 
-      <section class="conditions section">
+      <section class="conditions">
         <div class="container conditions__container">
           <div class="conditions__content">
             <h2 class="conditions__title title">Условия аренды автомобиля</h2>
@@ -168,7 +168,7 @@
 
       <!-- ! reviews -->
 
-      <section class="reviews section">
+      <section class="reviews">
         <div class="container reviews__container">
           <h2 class="reviews__title title">Отзывы</h2>
           <ul class="reviews__list">
@@ -328,6 +328,69 @@
               </p>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <!-- ! questions -->
+
+      <section class="questions">
+        <div class="container">
+          <div class="questions__inner">
+            <picture>
+              <source
+                srcset="./images/form-img.webp 1x, ./images/form-img@2x.webp 2x"
+                type="image/webp"
+              />
+              <img
+                class="form__img"
+                src="./images/form-img.png"
+                srcset="./images/form-img.png 1x, ./images/form-img@2x.png 2x"
+                alt="фотография машины"
+                width="600"
+                height="450"
+                loading="lazy"
+              />
+            </picture>
+            <div class="questions__content">
+              <h2 class="questions__content-title title">Остались вопросы?</h2>
+              <p class="questions__content-text">
+                Мы перезвоним Вам и проконсультируем по любому вопросу
+              </p>
+              <form class="questions__form">
+                <div class="questions__form-item">
+                  <label class="questions__form-label" for="user_name"
+                    >Имя</label
+                  >
+                  <input
+                    class="questions__form-input"
+                    type="text"
+                    id="user_name"
+                    name="user_name"
+                    minlength="2"
+                    maxlength="20"
+                    required
+                    placeholder=""
+                  />
+                </div>
+                <div class="questions__form-item">
+                  <label class="questions__form-label" for="user_tel"
+                    >Телефон</label
+                  >
+                  <input
+                    class="questions__form-input"
+                    type="tel"
+                    id="user_tel"
+                    name="user_tel"
+                    minlength="13"
+                    maxlength="13"
+                    required
+                    placeholder=""
+                  />
+                </div>
+                <button class="questions__form-btn btn" type="submit">ОСТАВИТЬ ЗАЯВКУ</button>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>
