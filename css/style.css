@@ -331,13 +331,19 @@ ol {
   transition: font-size 300ms, border-bottom 300ms;
 }
 
-.questions__form-input:focus {
+.questions__form-input:focus,
+.questions__form-input:not(:placeholder-shown) {
   font-size: 16px;
   border-bottom: 1px solid var(--secondary-color);
 }
 
-.questions__form-input:focus + .questions__form-label {
+.questions__form-input:focus + .questions__form-label,
+.questions__form-input:not(:placeholder-shown) + .questions__form-label {
   top: 5px;
+}
+
+.questions__form-input:invalid:not(:placeholder-shown) {
+  border-bottom: 1px solid red;
 }
 
 /* ! FOOTER */
