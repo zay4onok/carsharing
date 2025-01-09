@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  font-family: "Roboto Condensed", serif;
+  font-family: 'Roboto Condensed', serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -95,7 +95,7 @@ ol {
 
 .menu__link::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 0;
   height: 2px;
   bottom: -5px;
@@ -162,10 +162,6 @@ ol {
 
 /* ! conditions */
 
-.section {
-  margin-bottom: 300px;
-}
-
 .conditions__container {
   display: flex;
   justify-content: space-between;
@@ -180,7 +176,7 @@ ol {
 }
 
 .title {
-  font-family: "Fira Sans", serif;
+  font-family: 'Fira Sans', serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
@@ -212,9 +208,9 @@ ol {
 }
 
 .conditions__item::before {
-  content: "0" counter(conditions-counter);
+  content: '0' counter(conditions-counter);
   position: absolute;
-  font-family: "Fira Sans", serif;
+  font-family: 'Fira Sans', serif;
   font-weight: 500;
   font-size: 96px;
   line-height: 115px;
@@ -225,7 +221,7 @@ ol {
 }
 
 .conditions__item-title {
-  font-family: "Fira Sans", serif;
+  font-family: 'Fira Sans', serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
@@ -233,6 +229,10 @@ ol {
 }
 
 /* ! REVIEWS */
+
+.reviews {
+  margin-bottom: 100px;
+}
 
 .reviews__container {
   background-color: var(--accent-color);
@@ -288,6 +288,44 @@ ol {
   font-size: 0;
 }
 
+/* ! QUESTIONS */
+
+.questions {
+  margin-bottom: 100px;
+}
+.questions__inner {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+.questions__content-title {
+  margin-bottom: 5px;
+}
+.questions__content-text {
+  margin-bottom: 30px;
+}
+.questions__form-item {
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.questions__form-item:last-of-type {
+  margin-bottom: 50px;
+}
+.questions__form-label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  display: block;
+}
+.questions__form-input {
+  font-family: 'Roboto Condensed', serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--body-text);
+  padding: 20px 10px;
+}
+
 /* ! FOOTER */
 
 .footer__container {
@@ -308,7 +346,7 @@ ol {
 }
 .btn {
   text-transform: uppercase;
-  font-family: "Roboto Condensed", serif;
+  font-family: 'Roboto Condensed', serif;
   font-size: 16px;
   line-height: 19px;
   width: 200px;
