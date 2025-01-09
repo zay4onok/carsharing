@@ -306,7 +306,7 @@ ol {
 }
 .questions__form-item {
   position: relative;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 .questions__form-item:last-of-type {
   margin-bottom: 50px;
@@ -317,13 +317,27 @@ ol {
   left: 10px;
   transform: translateY(-50%);
   display: block;
+  transition: top 300ms;
+  cursor: text;
 }
 .questions__form-input {
+  width: 100%;
   font-family: 'Roboto Condensed', serif;
-  font-size: 16px;
+  font-size: 0;
   line-height: 19px;
   color: var(--body-text);
   padding: 20px 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transition: font-size 300ms, border-bottom 300ms;
+}
+
+.questions__form-input:focus {
+  font-size: 16px;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.questions__form-input:focus + .questions__form-label {
+  top: 5px;
 }
 
 /* ! FOOTER */
