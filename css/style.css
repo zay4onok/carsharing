@@ -53,11 +53,14 @@ ol {
   list-style: none;
 }
 
+.header {
+  background-color: var(--accent-color);
+}
+
 .header__container {
   height: 100px;
   font-size: 18px;
   line-height: 21px;
-  background-color: var(--accent-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -347,8 +350,11 @@ ol {
 
 /* ! REVIEWS */
 
-.reviews__container {
+.reviews {
   background-color: var(--accent-color);
+}
+
+.reviews__container {
   color: var(--white-bg);
   padding: 100px 100px;
 }
@@ -458,11 +464,14 @@ ol {
 
 /* ! FOOTER */
 
+.footer {
+  background-color: var(--accent-color);
+}
+
 .footer__container {
   font-size: 18px;
   line-height: 21px;
   min-height: 200px;
-  background-color: var(--accent-color);
   color: var(--white-bg);
 }
 
