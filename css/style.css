@@ -615,6 +615,18 @@ ol {
     height: auto;
     position: relative;
   }
+  .rent__title {
+    font-size: 38px;
+    line-height: 48px;
+  }
+  .rent__subtitle {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 50px;
+  }
+  .rent__btn {
+    margin-bottom: 50px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -625,9 +637,6 @@ ol {
   .rent__list {
     flex-direction: column;
     align-items: center;
-  }
-  .rent__btn {
-    margin-bottom: 65px;
   }
   .rent__links {
     flex-direction: column;
