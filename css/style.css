@@ -164,6 +164,87 @@ ol {
   color: var(--secondary-color);
 }
 
+/* ! rent */
+
+.rent__inner {
+  display: flex;
+}
+.rent__content {
+}
+.rent__title {
+}
+.rent__subtitle {
+}
+.btn {
+}
+.rent__list {
+}
+.rent__item {
+}
+.rent__item-img {
+}
+.rent__item-text {
+}
+.rent__slider-conditions-box {
+  width: 50%;
+}
+.rent__slider {
+  text-align: center;
+}
+.rent__slider-item {
+}
+.rent__slider-img {
+}
+.rent__slider-text {
+}
+.rent__links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.rent__links-item {
+}
+.rent__links-link {
+  position: relative;
+}
+
+.rent__links-link::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: -5px;
+  background-color: var(--body-text);
+}
+
+.rent .slick-dots {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.rent .slick-dots li {
+  width: 8px;
+  height: 8px;
+  background-color: var(--body-text);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 300ms;
+}
+
+.rent .slick-dots li.slick-active {
+  transform: scale(2);
+}
+
+.rent .slick-dots button {
+  font-size: 0;
+}
+
 /* ! conditions */
 
 .conditions__container {
