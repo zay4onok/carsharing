@@ -256,7 +256,7 @@ ol {
   gap: 10px;
   position: absolute;
   right: 0;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
 }
 
@@ -537,7 +537,7 @@ ol {
   }
   .rent__slider-text {
     margin-bottom: 30px;
-}
+  }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -590,6 +590,21 @@ ol {
   .questions__img {
     width: 100%;
     height: auto;
+  }
+  .rent__content {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .rent__list {
+    gap: 25px;
+  }
+  .rent__slider-conditions-box {
+    width: 100%;
+  }
+  .rent__slider-img {
+    width: 100%;
+    height: auto;
+    position: relative;
   }
 }
 
