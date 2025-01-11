@@ -280,7 +280,7 @@
               Именно для того, что бы Вам было приятно и безопасно пользоваться нашим сервисом на
               постоянной основе, мы выделили несколько условий для того, чтобы взять машину в аренду
             </p>
-            <button class="btn" type="button">Скачать приложение</button>
+            <button class="conditions__btn btn" type="button">Скачать приложение</button>
           </div>
           <ol class="conditions__list">
             <li class="conditions__item">
@@ -313,40 +313,61 @@
       <section class="advantages section">
         <div class="container">
           <h2 class="advantages__title title">Преимущества</h2>
-          <ul class="advantages__list">
-            <li class="advantages__item">мойка авто каждую неделю</li>
-            <li class="advantages__item">премиум автомобили</li>
-            <li class="advantages__item">мощный двигатель</li>
-            <li class="advantages__item">поддержка 24/7</li>
-            <li class="advantages__item">бензин за наш счет</li>
-            <li class="advantages__item">парковка по всему городу</li>
-            <li class="advantages__item">каждый месяц ТО автомобиля</li>
-          </ul>
-          <picture>
-            <source
-              srcset="./images/advantages-img.webp 1x, ./images/advantages-img@2x.webp 2x"
-              type="image/webp"
-            />
-            <img
-              class="advantages__img"
-              src="./images/advantages-img.png"
-              srcset="./images/advantages-img.png 1x, ./images/advantages-img@2x.png 2x"
-              width="600"
-              height="400"
-              alt="фотография машины"
-              loading="lazy"
-            />
-          </picture>
-          <div class="advantages__right">
-            <p class="advantages__text"
-              >Вы можете выбрать один из 300 наших автомобилей, насладиться сервисом, повысить
-              уровень жизни, не покупая дорогой автомобиль, успевать везде и каждый день ездить на
-              новом премиум автомобиле.
-            </p>
-            <p class="advantages__text"
-              >Посмотрите видео презентацию нашего сервиса и выберите автомобиль уже сейчас!
-            </p>
-            <button class="btn" type="button"></button>
+          <div class="advantages__container">
+            <ul class="advantages__list">
+              <li class="advantages__item">мойка авто каждую неделю</li>
+              <li class="advantages__item">премиум автомобили</li>
+              <li class="advantages__item">мощный двигатель</li>
+              <li class="advantages__item">поддержка 24/7</li>
+              <li class="advantages__item">бензин за наш счет</li>
+              <li class="advantages__item">парковка по всему городу</li>
+              <li class="advantages__item">каждый месяц ТО автомобиля</li>
+            </ul>
+            <picture>
+              <source
+                srcset="./images/advantages-img.webp 1x, ./images/advantages-img@2x.webp 2x"
+                type="image/webp"
+              />
+              <img
+                class="advantages__img"
+                src="./images/advantages-img.png"
+                srcset="./images/advantages-img.png 1x, ./images/advantages-img@2x.png 2x"
+                width="600"
+                height="400"
+                alt="фотография машины"
+                loading="lazy"
+              />
+            </picture>
+            <div class="advantages__right">
+              <p class="advantages__text"
+                >Вы можете выбрать один из 300 наших автомобилей, насладиться сервисом, повысить
+                уровень жизни, не покупая дорогой автомобиль, успевать везде и каждый день ездить на
+                новом премиум автомобиле.
+              </p>
+              <p class="advantages__text"
+                >Посмотрите видео презентацию нашего сервиса и выберите автомобиль уже сейчас!
+              </p>
+              <button class="advantages__btn btn" type="button">
+                <svg
+                  class="advantages__btn-svg"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 0C5.60708 0 0 5.60762 0 12.5C0 19.3924 5.60708 25 12.5 25C19.3929 25 25 19.3924 25 12.5C25 5.60762 19.3929 0 12.5 0ZM12.5 23.9583C6.18184 23.9583 1.04165 18.8182 1.04165 12.5C1.04165 6.18184 6.18184 1.04165 12.5 1.04165C18.8182 1.04165 23.9583 6.18184 23.9583 12.5C23.9583 18.8182 18.8182 23.9583 12.5 23.9583Z"
+                    fill="#FEFEFE"
+                  />
+                  <path
+                    d="M17.4693 12.062L10.1776 7.37451C10.0179 7.27026 9.81143 7.26465 9.64663 7.35518C9.47876 7.44673 9.375 7.62173 9.375 7.81245V17.1874C9.375 17.3782 9.47876 17.5532 9.64663 17.6447C9.72393 17.687 9.8104 17.7083 9.89585 17.7083C9.99351 17.7083 10.0922 17.6808 10.1776 17.6254L17.4693 12.9379C17.6178 12.8423 17.7083 12.677 17.7083 12.5C17.7083 12.3229 17.6178 12.1577 17.4693 12.062ZM10.4167 16.2332V8.76665L16.2242 12.5L10.4167 16.2332Z"
+                    fill="#FEFEFE"
+                  />
+                </svg>
+                ПоСМОТРЕТЬ ПРЕЗЕНТАЦИЮ</button
+              >
+            </div>
           </div>
         </div>
       </section>
@@ -576,7 +597,7 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__top">
-          <button class="btn" type="button">Скачать приложение</button>
+          <button class="footer__btn btn" type="button">Скачать приложение</button>
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item">
