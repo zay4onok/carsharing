@@ -356,6 +356,7 @@ ol {
 .advantages__container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .advantages__title {
@@ -373,7 +374,7 @@ ol {
 
 .advantages__item::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 16px;
   height: 16px;
   top: 50%;
@@ -407,11 +408,11 @@ ol {
 }
 
 .advantages__text {
-  width: 267px;
+  max-width: 267px;
   margin-bottom: 30px;
 }
 
-.advantages__btn{
+.advantages__btn {
   position: relative;
   display: flex;
   align-items: center;
@@ -422,11 +423,11 @@ ol {
 .advantages__btn:focus .advantages__btn-svg,
 .advantages__btn:active .advantages__btn-svg {
   stroke: var(--secondary-color);
-} 
+}
 
 .advantages__btn-svg {
   position: absolute;
-  left: 19px;
+  left: 15px;
   stroke: var(--white-bg);
   transition: stroke 300ms;
 }
@@ -604,7 +605,7 @@ ol {
 
 /* ! MEDIA */
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1399px) {
   .conditions__content {
     text-align: center;
   }
@@ -630,6 +631,16 @@ ol {
   .rent__slider-text {
     margin-bottom: 30px;
   }
+  .advantages__title {
+    text-align: center;
+  }
+  .advantages__img {
+    width: 500px;
+    height: auto;
+  }
+  .advantages__item:not(:last-child) {
+    margin-bottom: 17px;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -646,9 +657,18 @@ ol {
   .footer .btn {
     order: 1;
   }
+  .advantages__img {
+    width: 400px;
+  }
+  .advantages__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
+  .section {
+    margin-bottom: 50px;
+  }
   .header .menu {
     display: none;
   }
@@ -657,6 +677,41 @@ ol {
   }
   .conditions__list {
     flex-direction: column;
+  }
+  .conditions__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .advantages__container {
+    flex-direction: column;
+  }
+  .advantages__img {
+    order: 1;
+    margin-bottom: 30px;
+  }
+  .advantages__list {
+    order: 2;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+  .advantages__item:nth-child(n) {
+    text-align: center;
+    margin-right: 0;
+  }
+  .advantages__item::after {
+    margin: 0;
+    left: -50px;
+  }
+  .advantages__right {
+    text-align: center;
+    order: 3;
+    margin: 0;
+  }
+  .advantages__btn {
+    margin: 0 auto;
+  }
+  .advantages__img {
+    width: 100%;
   }
 }
 
@@ -673,9 +728,6 @@ ol {
 }
 
 @media only screen and (max-width: 650px) {
-  .section {
-    margin-bottom: 50px;
-  }
   .reviews__list > *:nth-child(n + 5) {
     display: none;
   }
