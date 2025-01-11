@@ -91,16 +91,19 @@
     </header>
 
     <main class="main">
-      
       <!-- ! RENT -->
 
       <section class="rent section">
         <div class="container">
           <div class="rent__inner">
             <div class="rent__content">
-              <h1 class="rent__title">Каршеринг в Киеве <br> LUX автомобили</h1>
+              <h1 class="rent__title"
+                >Каршеринг в Киеве <br />
+                LUX автомобили</h1
+              >
               <p class="rent__subtitle"
-                >Закажи эксклюзивный автомобиль через <br> мобильное приложение в любой точке города</p
+                >Закажи эксклюзивный автомобиль через <br />
+                мобильное приложение в любой точке города</p
               >
               <button class="rent__btn btn" type="button">Скачать приложение</button>
               <ul class="rent__list">
@@ -302,6 +305,49 @@
               </p>
             </li>
           </ol>
+        </div>
+      </section>
+
+      <!-- ! advantages -->
+
+      <section class="advantages section">
+        <div class="container">
+          <h2 class="advantages__title title">Преимущества</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">мойка авто каждую неделю</li>
+            <li class="advantages__item">премиум автомобили</li>
+            <li class="advantages__item">мощный двигатель</li>
+            <li class="advantages__item">поддержка 24/7</li>
+            <li class="advantages__item">бензин за наш счет</li>
+            <li class="advantages__item">парковка по всему городу</li>
+            <li class="advantages__item">каждый месяц ТО автомобиля</li>
+          </ul>
+          <picture>
+            <source
+              srcset="./images/advantages-img.webp 1x, ./images/advantages-img@2x.webp 2x"
+              type="image/webp"
+            />
+            <img
+              class="advantages__img"
+              src="./images/advantages-img.png"
+              srcset="./images/advantages-img.png 1x, ./images/advantages-img@2x.png 2x"
+              width="600"
+              height="400"
+              alt="фотография машины"
+              loading="lazy"
+            />
+          </picture>
+          <div class="advantages__right">
+            <p class="advantages__text"
+              >Вы можете выбрать один из 300 наших автомобилей, насладиться сервисом, повысить
+              уровень жизни, не покупая дорогой автомобиль, успевать везде и каждый день ездить на
+              новом премиум автомобиле.
+            </p>
+            <p class="advantages__text"
+              >Посмотрите видео презентацию нашего сервиса и выберите автомобиль уже сейчас!
+            </p>
+            <button class="btn" type="button"></button>
+          </div>
         </div>
       </section>
 
